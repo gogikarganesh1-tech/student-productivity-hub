@@ -90,3 +90,6 @@ window.onload = function(){
 
     });
 };
+function toggleDarkMode(){
+    document.body.classList.toggle("dark");
+}
