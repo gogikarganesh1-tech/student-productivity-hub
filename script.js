@@ -13,3 +13,18 @@ function showCGPA(){
     document.getElementById("cgpaResult").innerHTML=
     "Your CGPA is "+cgpa;
 }
+function checkAttendance(){
+
+    let attended =
+    Number(document.getElementById("attended").value);
+
+    let total =
+    Number(document.getElementById("total").value);
+
+    let percentage =
+    (attended/total)*100;
+
+    document.getElementById("attendanceResult")
+    .innerHTML =
+    "Attendance: " + percentage.toFixed(2) + "%";
+}
