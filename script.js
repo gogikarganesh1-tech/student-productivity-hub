@@ -72,3 +72,21 @@ function startTimer(){
 
     },1000);
 }
+window.onload = function(){
+
+    let tasks =
+    JSON.parse(localStorage.getItem("tasks"))
+    || [];
+
+    tasks.forEach(function(task){
+
+        let li =
+        document.createElement("li");
+
+        li.innerText = task;
+
+        document.getElementById("taskList")
+        .appendChild(li);
+
+    });
+};
