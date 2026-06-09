@@ -1,12 +1,44 @@
 body{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
+    background:#f0f4f8;
+    margin:0;
+    padding:20px;
     text-align:center;
-    background:#f4f4f4;
+}
+
+h1{
+    color:#333;
 }
 
 .box{
     background:white;
-    margin:20px;
+    max-width:500px;
+    margin:20px auto;
     padding:20px;
-    border-radius:10px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+input{
+    padding:10px;
+    margin:5px;
+    width:80%;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#007bff;
+    color:white;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+li{
+    text-align:left;
+    margin:5px 0;
 }
