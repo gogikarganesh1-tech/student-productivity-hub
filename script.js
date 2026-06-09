@@ -1,10 +1,26 @@
 function addTask(){
-    let task=document.getElementById("task").value;
 
-    let li=document.createElement("li");
-    li.innerText=task;
+    let task =
+    document.getElementById("task").value;
 
-    document.getElementById("taskList").appendChild(li);
+    let li =
+    document.createElement("li");
+
+    li.innerText = task;
+
+    document.getElementById("taskList")
+    .appendChild(li);
+
+    let tasks =
+    JSON.parse(localStorage.getItem("tasks"))
+    || [];
+
+    tasks.push(task);
+
+    localStorage.setItem(
+        "tasks",
+        JSON.stringify(tasks)
+    );
 }
 
 function showCGPA(){
